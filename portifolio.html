@@ -62,7 +62,6 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 15px;
-            
         }
         .skill {
             background: #667eea;
@@ -80,31 +79,78 @@
             bottom: 0;
             width: 100%;
         }
+        #photo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px auto;
+            max-width: 800px;
+            text-align: left;
+        }
+        #photo img {
+            width: 100%;
+            max-width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid #667eea;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-right: 20px;
+        }
+        #photo div {
+            flex: 1;
+        }
+        .resume-section {
+            margin-top: 50px;
+        }
+        .resume-button {
+            background-color: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .resume-button:hover {
+            background-color: #764ba2;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Shivakumar koti</h1>
+        <h1>Shivakumar Koti</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <section id="photo">
+        <img src="c:\Users\vijayalaxmi\Downloads\s photo.jpeg" alt="Shivakumar Koti's Photo">
+        <div>
+            <h2>My Photo</h2>
+            <p>This is a little about me. I am passionate about building web applications and improving my skills every day.</p>
+        </div>
+    </section>
     
     <section id="about">
         <h2>About Me</h2>
-        <p>Welcome to my Portfolio, I'm a passionate and motivated Full Stack Developer with a strong foundation in front-end and back-end technologies.
-         Excited to kickstart my career, contribute to meaningful projects, and grow as a developer.I love building responsive and user-friendly web applications, solving coding challenges, and continously learning new technologies.
-          <p>Let's connect and build something great together
-        </p>
+        <p>Welcome to my Portfolio! I'm a passionate and motivated Full Stack Developer with a strong foundation in front-end and back-end technologies. Excited to kickstart my career, contribute to meaningful projects, and grow as a developer. I love building responsive and user-friendly web applications, solving coding challenges, and continuously learning new technologies. Let's connect and build something great together!</p>
     </section>
-    
+
     <section id="projects">
         <h2>Projects</h2>
+        <div class="project">
+            <h3>Food Delivery Application</h3>
+            <p>Developed a Food Delivery Application that connects clients to restaurants, allowing for smooth menu browsing and real-time order placement. Restaurants now have user-friendly interfaces to manage orders more effectively and provide better customer service.</p>
+        </div>
         <div class="project">
             <h3>Weather Application</h3>
             <p>A dynamic weather application that provides real-time weather updates using an external API. Users can search for any city and get current temperature, humidity, and weather conditions.</p>
@@ -114,7 +160,7 @@
             <p>A modern and responsive product landing page designed to showcase a product with engaging visuals, features, and a call-to-action section. Built using HTML, CSS, and JavaScript for an interactive user experience.</p>
         </div>
     </section>
-    
+
     <section id="skills">
         <h2>Skills</h2>
         <div class="skills">
@@ -128,20 +174,43 @@
             <div class="skill">Spring Framework</div>
         </div>
     </section>
-    
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>Bachelor's in Electrical and Electronics Engineering</p>
+        <p>VTU University, Basaveshwar Engineering College</p>
+        <p>Graduated in 2024</p>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Full Stack Web Development (Tap Academy)</li>
+            <li>Spring Framework Essentials (LinkedIn Learning)</li>
+        </ul>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <h2>Resume</h2>
+        <p>Download my resume by clicking the button below:</p>
+        <a href="c:\Users\vijayalaxmi\Downloads\shivu resume 5.pdf.pdf" class="resume-button" target="_blank">Download Resume</a>
+    </section>
+
     <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <href type="Email">shivakumarkoti168@gmail.com</href></p>
-      
-      <div class="social-links">
-          <a href="https://www.instagram.com/shivu_koti_/?igsh=OThieXQxbmcxaWM1&utm_source=ig_contact_invite#"><img src="c:\Users\vijayalaxmi\Downloads\instagram-brands.svg" alt="Instagram" height="20px" width="20px"> Instagram</a>
-          <a href="https://www.linkedin.com/in/shivakumar-koti-bb93b025a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="c:\Users\vijayalaxmi\Downloads\linkedin-brands.svg" height="20px" width="20px" alt="LinkedIn"> LinkedIn</a>
-          <a href="https://github.com/Shivu2450/Shivakumar-Koti.git"><img src="c:\Users\vijayalaxmi\Downloads\github-brands.svg" alt="GitHub" height="20px" width="20px"> GitHub</a>
-          
-      </div>
-    
-    
-    
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:shivakumarkoti168@gmail.com">shivakumarkoti168@gmail.com</a></p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/shivu_koti_/?igsh=OThieXQxbmcxaWM1&utm_source=ig_contact_invite#"><img src="c:\Users\vijayalaxmi\Downloads\instagram-brands.svg" alt="Instagram" height="20px" width="20px"> Instagram</a>
+            <a href="https://www.linkedin.com/in/shivakumar-koti-bb93b025a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="c:\Users\vijayalaxmi\Downloads\linkedin-brands.svg" height="20px" width="20px" alt="LinkedIn"> LinkedIn</a>
+            <a href="https://github.com/Shivu2450/Shivakumar-Koti.git"><img src="c:\Users\vijayalaxmi\Downloads\github-brands.svg" alt="GitHub" height="20px" width="20px"> GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shivakumar Koti. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
